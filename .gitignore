@@ -1,0 +1,26 @@
+#ignore osx system files
+.DS_Store
+
+# Ignore bundler config
+/.bundle
+
+# Ignore the build directory
+/build
+
+# ignore the tmp directory
+/tmp
+
+# Ignore Sass' cache
+/.sass-cache
+
+# Ignore .rvmrc/.ruby-version as these may differ from dev to dev
+.ruby-version
+.ruby-gemset
+.rvmrc
+
+# Ignore defaults and artifacts
+*.orig
+*.default
+
+# Ignore design assets
+/_design-assets

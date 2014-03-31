@@ -1,0 +1,124 @@
+/*!-------------------------------------------------------------
+
+    THROUGHOUT SITE
+
+  -------------------------------------------------------------*/
+
+html, body {
+    height : 100%;
+    margin : 0px;
+    padding : 0px;
+
+    h1 {
+      color: white;
+    }
+}
+
+.row.full-width {
+  width : 100%;
+  max-width : 100%;
+}
+
+.hCtrl {
+
+}
+
+
+/*!-------------------------------------------------------------
+
+    PAGES
+
+  -------------------------------------------------------------*/
+
+#nav {
+  position: fixed;
+  z-index: 2;
+  background-color: transparent;
+
+  a {
+    color: white;
+  }
+
+  .sub-nav {
+    float: right !important;
+  }
+}
+
+#hero {
+  background-image: url(image_path('herofilter.jpg'));
+  background-size: cover;
+  z-index: 1;
+
+/*  h1 {
+    color: #867c73;
+    position: absolute;
+    top: 93%;
+    left: 46%;
+    font-size: 90px;
+  }*/
+
+/*  h2 {
+    position: absolute;
+    top: 93%;
+    left: 48%;
+    color: white;
+  }*/
+}
+
+#arrow {
+  position: relative;
+  top: 95%;
+  width: 3%;
+  height: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#shop {
+  z-index: 1;
+  background-color: #867c73;
+}
+
+.shoppick {
+  image {
+  }
+}
+
+#about {
+  background-image: url(image_path('aboutbg.jpg'));
+  background-size: cover;
+  position: fixed;
+  z-index: 0;
+}
+
+#contact {
+  background-color: #867c73;
+}
+
+
+/*!-------------------------------------------------------------
+
+    TYPOGRAPHY & ICONOGRAPHY
+
+  -------------------------------------------------------------*/
+/*
+h1 {
+  font-size : 52px;
+}
+h2 {
+  font-size : 54px;
+}
+h3 {
+  font-size : 36px;
+}
+h4 {
+  font-size : 27px;
+}
+h5 {
+  font-size : 18px;
+}
+h6 {
+  font-size : 12px;
+}*/

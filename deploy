@@ -1,0 +1,5 @@
+rm -rf tmp/app
+git clone https://$GH_AUTH_TOKEN:x-oauth-basic@github.com/$GH_USERNAME/$GH_REPONAME.git tmp/app
+cd tmp/app
+bundle
+bundle exec middleman build
