@@ -7,15 +7,19 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
 .row.full-width.page
 
   %div#nav{"data-magellan-expedition" => "fixed"}
+    .smallimage.large-2.columns
+      = link_to image_tag("logo.png"), "#hero"
     %dl.sub-nav
-      %dd{"data-magellan-arrival" => "hero"}
-        %a{:href => "#hero"} HOME     
+      %dd.hero{"data-magellan-arrival" => "hero"}
+        %a{:href => "#hero"}     
       %dd{"data-magellan-arrival" => "shop"}
         %a{:href => "#shop"} SHOP
       %dd{"data-magellan-arrival" => "aboutText"}
         %a{:href => "#aboutText"} ABOUT
       %dd{"data-magellan-arrival" => "contact"}
         %a{:href => "#contact"} CONTACT
+      %dd
+        %a{:href => "http://refinddenim.wordpress.com/"} BLOG
   
   #hero.large-12.columns.hCtrl
     %a{:name => "hero"}
@@ -23,7 +27,7 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
     / %h1 &#9600;&#9600;
     / %h2 &darr; also rarr and 
     #arrow
-      =image_tag "arrow.png"
+      = link_to image_tag('arrow.png'), '#shop'
     #logo.large-6.columns
       %a{:href => "#hero"}
         %img{:src => image_path('logo.png')}

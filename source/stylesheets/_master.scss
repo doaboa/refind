@@ -37,11 +37,26 @@ html, body {
 
   a {
     color: white;
+    font-weight: bold;
   }
 
   .sub-nav {
     float: right !important;
+
+    dd {
+      margin: 15px;
+    }
+
+    dd.active a {
+      background-color: #34495e;
+    }
+
+    dd.hero.active a {
+      background-color: transparent;
+    }
+
   }
+
 }
 
 #hero {

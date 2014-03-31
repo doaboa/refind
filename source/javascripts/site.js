@@ -26,3 +26,14 @@ $(document).ready(function(){
         });
     });
 });
+
+$(document).ready(function(){
+    var topOfShop = $("#shop").offset().top;
+    $(window).scroll(function (){
+        if ($(window).scrollTop() < topOfShop) {
+            $(".smallimage").hide();
+        } else {
+            $(".smallimage").show();
+        }
+    });
+});
