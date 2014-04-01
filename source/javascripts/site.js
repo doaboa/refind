@@ -10,6 +10,8 @@ $(window).resize(sizeContent);
 function sizeContent() {
     var newHeightSize =  $("html").height() + "px";
     $(".hCtrl").css("height", newHeightSize);
+
+    // var divHeightSize = ($("html").height()) -  + "px";
 }
 
 $(document).ready(function(){
@@ -28,6 +30,9 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+
+    $('#slider').leanSlider();
+
     var topOfShop = $("#shop").offset().top;
     $(window).scroll(function (){
         if ($(window).scrollTop() < topOfShop) {

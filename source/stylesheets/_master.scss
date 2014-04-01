@@ -64,20 +64,10 @@ html, body {
   background-size: cover;
   z-index: 1;
 
-/*  h1 {
-    color: #867c73;
-    position: absolute;
-    top: 93%;
-    left: 46%;
-    font-size: 90px;
-  }*/
-
-/*  h2 {
-    position: absolute;
-    top: 93%;
-    left: 48%;
-    color: white;
-  }*/
+  #logo {
+    margin-left: 3em;
+    margin-top: 2em;
+  }
 }
 
 #arrow {
@@ -90,14 +80,14 @@ html, body {
   margin-right: auto;
 }
 
-
 #shop {
   z-index: 1;
   background-color: #867c73;
-}
+  position: relative;
 
-.shoppick {
-  image {
+  img {
+    position: absolute;
+    bottom: 0;
   }
 }
 
