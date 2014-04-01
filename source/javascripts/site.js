@@ -11,7 +11,8 @@ function sizeContent() {
     var newHeightSize =  $("html").height() + "px";
     $(".hCtrl").css("height", newHeightSize);
 
-    // var divHeightSize = ($("html").height()) -  + "px";
+    var divHeightSize = ($("html").height() + 15) + "px";
+    $(".hCtrlAdj").css("height", divHeightSize);
 }
 
 $(document).ready(function(){
@@ -30,9 +31,10 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-
     $('#slider').leanSlider();
+});
 
+$(document).ready(function(){
     var topOfShop = $("#shop").offset().top;
     $(window).scroll(function (){
         if ($(window).scrollTop() < topOfShop) {
