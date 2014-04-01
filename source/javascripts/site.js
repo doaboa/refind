@@ -31,16 +31,17 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('#slider').leanSlider();
-});
-
-$(document).ready(function(){
+    $(".smallimage").hide();
     var topOfShop = $("#shop").offset().top;
     $(window).scroll(function (){
-        if ($(window).scrollTop() < topOfShop) {
-            $(".smallimage").hide();
-        } else {
+        if ($(window).scrollTop() > topOfShop) {
             $(".smallimage").show();
+        } else {
+            $(".smallimage").hide();
         }
     });
+});
+
+$(window).scroll(function(){
+    $('#slider').leanSlider();
 });
