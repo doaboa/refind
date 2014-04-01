@@ -8,6 +8,7 @@ html, body {
     height : 100%;
     margin : 0px;
     padding : 0px;
+    font-family: 'Allerta', sans-serif;
 
     h1 {
       color: white;
@@ -59,6 +60,14 @@ html, body {
 
 }
 
+.smallimage {
+  img {
+    height: 75%;
+    width: 75%;
+    margin-left: 1em;
+  }
+}
+
 #hero {
   background-image: url(image_path('herofilter.jpg'));
   background-size: cover;
@@ -90,7 +99,26 @@ html, body {
     bottom: 0;
     max-height: 100%;
   }
+
+  p.large {
+    position: absolute;
+    top: 28%;
+    left: 45%;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Allerta', sans-serif;
+  }
+
+  h4.shop {
+    position: absolute;
+    top: 68%;
+    left: 75%;
+    color: #11273d;
+  }
+
 }
+
 
 #about {
   background-image: url(image_path('aboutbg.jpg'));
@@ -99,32 +127,29 @@ html, body {
   z-index: 0;
 }
 
+#aboutText {
+  background-color: rgba(189, 195, 199,0.3);
+
+  #good, #diff, #her {
+    margin-top: 30%;
+    background-color: rgba(189, 195, 199,0.7);
+  }
+
+  h2 {
+    text-align: center; 
+    color: #11273d; 
+  } 
+
+  p {
+    text-align:justify;
+    color: #11273d;
+  }
+}
+
 #contact {
   background-color: #867c73;
 }
 
 
-/*!-------------------------------------------------------------
 
-    TYPOGRAPHY & ICONOGRAPHY
 
-  -------------------------------------------------------------*/
-/*
-h1 {
-  font-size : 52px;
-}
-h2 {
-  font-size : 54px;
-}
-h3 {
-  font-size : 36px;
-}
-h4 {
-  font-size : 27px;
-}
-h5 {
-  font-size : 18px;
-}
-h6 {
-  font-size : 12px;
-}*/

@@ -13,6 +13,10 @@ function sizeContent() {
 
     var divHeightSize = ($("html").height() + 15) + "px";
     $(".hCtrlAdj").css("height", divHeightSize);
+
+    var goodHeight = $("#good").height() + "px";
+    $("#diff").css("height", goodHeight);
+    $("#her").css("height", goodHeight);
 }
 
 $(document).ready(function(){
@@ -34,7 +38,7 @@ $(document).ready(function(){
     $(".smallimage").hide();
     var topOfShop = $("#shop").offset().top;
     $(window).scroll(function (){
-        if ($(window).scrollTop() > topOfShop) {
+        if ($(window).scrollTop() >= topOfShop) {
             $(".smallimage").show();
         } else {
             $(".smallimage").hide();
@@ -43,5 +47,6 @@ $(document).ready(function(){
 });
 
 $(window).scroll(function(){
-    $('#slider').leanSlider();
+    var $slider = $('#slider').leanSlider();
+    $slider.removeClass("hidden");
 });

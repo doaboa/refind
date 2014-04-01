@@ -24,8 +24,6 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
   #hero.large-12.columns.hCtrl
     %a{:name => "hero"}
       %h3{"data-magellan-destination" => "hero"}
-    / %h1 &#9600;&#9600;
-    / %h2 &darr; also rarr and 
     #arrow
       = link_to image_tag('arrow.png'), '#shop'
     #logo.large-6.columns.end
@@ -35,22 +33,44 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
   #shop.large-12.columns.hCtrlAdj
     %a{:name => "shop"}
       %h3{"data-magellan-destination" => "shop"}
-    / .shoppic.large-6.columns.hCtrlDiv
-    #slider.hCtrl
+    #slider.hidden.large-12.columns.hCtrl
       .slide1
-        =image_tag "meshop.jpg", :id => "meshop", :alt => "jeans"
-      / .shoppic.large-6.columns.hCtrlDiv
+        =image_tag "meshop.jpg", :id => "meshop"
+        %p.large 
+          The Perfect
+          %br 
+            Boyfriend
+        %h4.shop Shop Jeans &rarr;
       .slide2
         =image_tag "juliashop.jpg"
+        %p.large 
+          The Hook-up
+          %br 
+            Cut-offs
+        %h4.shop Shop Shorts &rarr;
 
   #about.large-12.columns.hCtrl
 
   #aboutText.large-12.columns.hCtrl
     %a{:name => "aboutText"}
       %h3{"data-magellan-destination" => "aboutText"}
-    %h1 about us
+    #good.large-4.columns
+      %h2 Doing Good. 
+      %p
+        Creating denims for the greater good, each vintage pair is carefully selected and redesigned in-house. We believe that everyone deserves the perfect pair of boyfriend jeans without compromising comfort and/or style. The worn-in nature provides a sense of belonging and the process of design makes each pair a one-of-a-kind.  
+    #diff.large-4.columns
+      %h2 Being Different.
+      %p
+        Being born (or reborn) in the heart of NYC, we strive to be distinct by staying on top of our game by emphasizing our creativity. Our products are high in quality and versatile to remain at the core of your closet forever.
+    #her.large-4.columns
+      %h2 For Her.
+      %p
+        We design for the woman brave enough to walk apart from the crowd. The one willing to take risks and believes in the power of the individual. She is effortless and unconcerned of the way she is perceived. This attitude makes her intriguing to others which is why many are inspired by her. 
 
   #contact.large-12.columns.hCtrl
     %a{:name => "contact"}
       %h3{"data-magellan-destination" => "contact"}
     %h1 omg contact info
+
+
+    
