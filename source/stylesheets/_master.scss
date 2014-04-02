@@ -148,8 +148,67 @@ html, body {
 
 #contact {
   background-color: #867c73;
+
+  #conText, {
+    margin-top: 12%;
+    padding-left: 5%;
+    h3 {
+      color: #11273d;
+    }
+
+    a.button {
+      border-color: white;
+      background-color: #867c73;
+      color: #11273d;
+    }
+
+    h5 {
+      color: #11273d;
+      text-align: justify;
+    }
+
+  }
+
+  #image {
+    padding-left: 10%;
+    margin-top: 10%;
+
+    h1 {
+      font-size: 400%;
+      text-align:right;
+    }
+
+    img {
+      height: 15%;
+      width: 15%;
+      border-radius: 50%;
+      float: right;
+      margin-left: 1em;
+      margin-top: -1em;
+      opacity: 0.8;
+
+      hover {
+        opacity: 1;
+      }
+    }
+
+  }
+
 }
 
+#smediab {
+  background-color: #867c73;
+
+  p {
+    text-align: center;
+    vertical-align: center;
+    color: #11273d;
+
+    a {
+      color: #34495e;
+    }
+  }
+}
 
 
 

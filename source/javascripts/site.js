@@ -14,6 +14,9 @@ function sizeContent() {
     var divHeightSize = ($("html").height() + 15) + "px";
     $(".hCtrlAdj").css("height", divHeightSize);
 
+    var divHeightSize = ($("html").height() - 30) + "px";
+    $(".hCtrlCon").css("height", divHeightSize);
+
     var goodHeight = $("#good").height() + "px";
     $("#diff").css("height", goodHeight);
     $("#her").css("height", goodHeight);

@@ -19,7 +19,7 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
       %dd{"data-magellan-arrival" => "contact"}
         %a{:href => "#contact"} CONTACT
       %dd
-        %a{:href => "http://refinddenim.wordpress.com/"} BLOG
+        %a{} BLOG
   
   #hero.large-12.columns.hCtrl
     %a{:name => "hero"}
@@ -67,10 +67,50 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
       %p
         We design for the woman brave enough to walk apart from the crowd. The one willing to take risks and believes in the power of the individual. She is effortless and unconcerned of the way she is perceived. This attitude makes her intriguing to others which is why many are inspired by her. 
 
-  #contact.large-12.columns.hCtrl
+  #contact.large-12.columns.hCtrlCon
     %a{:name => "contact"}
       %h3{"data-magellan-destination" => "contact"}
-    %h1 omg contact info
+    #image.large-4.columns
+      %h1
+        Find us
+        = succeed "find" do
+          %i Re
+        you 
+      = link_to image_tag("fb.png"), "http://www.facebook.com"
+      = link_to image_tag("insta.png"), "http://www.instagram.com"
+      = link_to image_tag("twitter.png"), "http://www.twitter.com"
+
+    #conText.large-4.columns
+      %h3 &#9990 979.555-5555
+      %h3 &#9993 hello@refind.com
+      %h3 
+        &#8962; 102 Spring Street
+        %br
+          &nbsp;&nbsp; New York, NY 10012
+      %br
+      %h5 
+        Drop by our booth at the Brooklyn Bazaar every Satuday and Sunday from 7pm-2am to shop!
+      %br
+      %h5 
+        Custom fittings and consultations are available by appointment at our SoHo Showroom.
+      %a.button.expand{:href => "mailto:fakeemail@refind.com"} Request Showroom Appointment
+
+    #smedia.large-4.columns
+
+  #smediab.large-12.columns
+    %p
+      this mock-up website is designed and developed by
+      %a{:href => "http://www.github.com/doaboa"} Doa Jafri
+      &nbsp;&nbsp; photographs by
+      %a{:href => "http://www.erikvalind.com"} Erik Valind
+      &nbsp;&nbsp; jeans by
+      %a{:href => "http://www.refinddenim.com"} Rose Tran
+      &nbsp;&nbsp; all content &copy; 2014
 
 
-    
+
+
+
+
+
+
