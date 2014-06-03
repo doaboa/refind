@@ -1,11 +1,6 @@
-# W Residences
+# Refind Denim Mock-Up
 
-##### This is part of a student advertising campaign for the W Hotel Residences.
-
-#Team:
-	- Creative: Fatima Jafri
-	- Copy: Megan Leinfelder
-	- Development & Design: Doa Jafri
+##### This is a mock-up for a vintage jean company's website.
 
 I'm using: 
   - [ZURB Foundation](http://foundation.zurb.com/)
