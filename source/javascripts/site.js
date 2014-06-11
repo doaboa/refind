@@ -49,7 +49,7 @@ $(document).ready(function(){
     });
 });
 
-$(window).scroll(function(){
+$(document).ready(function(){
     var $slider = $('#slider').leanSlider();
     $slider.removeClass("hidden");
 });

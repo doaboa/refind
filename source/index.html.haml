@@ -6,7 +6,7 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
 
 .row.full-width.page
 
-  %div#nav{"data-magellan-expedition" => "fixed"}
+  %div.hide-for-small#nav{"data-magellan-expedition" => "fixed"}
     .smallimage.large-2.columns.end
       = link_to image_tag("logo.png"), "#hero"
     %dl.sub-nav
@@ -20,16 +20,33 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
         %a{:href => "#contact"} CONTACT
       %dd
         %a{} BLOG
+
+  %div.show-for-small#nav{"data-magellan-expedition" => "fixed"}
+    .smallimage
+      = link_to image_tag("logo.png"), "#hero"
+    %dl.sub-nav.smedit
+      %dd.hero{"data-magellan-arrival" => "hero"}
+        %a{:href => "#hero"}     
+      %dd{"data-magellan-arrival" => "shop"}
+        %a{:href => "#shop"} SHOP
+      %dd{"data-magellan-arrival" => "aboutText"}
+        %a{:href => "#aboutText"} ABOUT
+      %dd{"data-magellan-arrival" => "contact"}
+        %a{:href => "#contact"} CONTACT
+      %dd
+        %a{} BLOG
+
   
   #hero.large-12.columns.hCtrl
     %a{:name => "hero"}
       %h3{"data-magellan-destination" => "hero"}
     #arrow
       = link_to image_tag('arrow.png'), '#shop'
-    #logo.large-6.columns.end
+    #logo
       %a{:href => "#hero"}
         %img{:src => image_path('logo.png')}
   
+
   #shop.large-12.columns.hCtrlAdj
     %a{:name => "shop"}
       %h3{"data-magellan-destination" => "shop"}
@@ -54,17 +71,27 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
   #aboutText.large-12.columns.hCtrl
     %a{:name => "aboutText"}
       %h3{"data-magellan-destination" => "aboutText"}
-    #good.large-4.columns
+    #good.large-4.columns.hide-for-small
       %h2 Doing Good. 
       %p
         Creating denims for the greater good, each vintage pair is carefully selected and redesigned in-house. We believe that everyone deserves the perfect pair of boyfriend jeans without compromising comfort and/or style. The worn-in nature provides a sense of belonging and the process of design makes each pair a one-of-a-kind.  
-    #diff.large-4.columns
+    #diff.large-4.columns.hide-for-small
       %h2 Being Different.
       %p
         Being born (or reborn) in the heart of NYC, we strive to be distinct by staying on top of our game by emphasizing our creativity. Our products are high in quality and versatile to remain at the core of your closet forever.
-    #her.large-4.columns
+    #her.large-4.columns.hide-for-small
       %h2 For Her.
       %p
+        We design for the woman brave enough to walk apart from the crowd. The one willing to take risks and believes in the power of the individual. She is effortless and unconcerned of the way she is perceived. This attitude makes her intriguing to others which is why many are inspired by her. 
+    #good.show-for-small
+      %h2 Doing Good. Being Different. For Her. 
+      %p
+        Creating denims for the greater good, each vintage pair is carefully selected and redesigned in-house. We believe that everyone deserves the perfect pair of boyfriend jeans without compromising comfort and/or style. The worn-in nature provides a sense of belonging and the process of design makes each pair a one-of-a-kind.
+        %br
+        %br
+        Being born (or reborn) in the heart of NYC, we strive to be distinct by staying on top of our game by emphasizing our creativity. Our products are high in quality and versatile to remain at the core of your closet forever.
+        %br
+        %br
         We design for the woman brave enough to walk apart from the crowd. The one willing to take risks and believes in the power of the individual. She is effortless and unconcerned of the way she is perceived. This attitude makes her intriguing to others which is why many are inspired by her. 
 
   #contact.large-12.columns.hCtrlCon
@@ -89,7 +116,7 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
           &nbsp;&nbsp; New York, NY 10012
       %br
       %h5 
-        Drop by our booth at the Brooklyn Bazaar every Satuday and Sunday from 7pm-2am to shop!
+        Drop by our booth at the Brooklyn Bazaar every Satuday and Sunday from 7am-2pm to shop!
       %br
       %h5 
         Custom fittings and consultations are available by appointment at our SoHo Showroom.
@@ -104,7 +131,7 @@ page_description:   "Vintage Jeans and Shorts by Rose Tran. Photography: Erik Va
       &nbsp;&nbsp; photographs by
       %a{:href => "http://www.erikvalind.com"} Erik Valind
       &nbsp;&nbsp; jeans by
-      %a{:href => "http://www.refinddenim.com"} Rose Tran
+      %a{:href => ""} Rose Tran
       &nbsp;&nbsp; all content &copy; 2014
 
 
