@@ -17,6 +17,7 @@ function sizeContent() {
     var divHeightSize = ($("html").height() - 30) + "px";
     $(".hCtrlCon").css("height", divHeightSize);
 
+    // adjustment for about page bug
     var goodHeight = $("#good").height() + "px";
     $("#diff").css("height", goodHeight);
     $("#her").css("height", goodHeight);
